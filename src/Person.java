@@ -16,7 +16,6 @@ public class Person {
     public static void createPerson(String personName) {
         sayHello(personName);
         setName(personName);
-
     }
 
     public static void main(String[] args) {
@@ -24,6 +23,7 @@ public class Person {
         System.out.println("Please enter your name");
         String userName = scanner.nextLine();
         createPerson(userName);
+
 
 
     }
