@@ -15,6 +15,7 @@ public class MethodsExercises {
 
     public static int multiplication(int number1, int number2) {
         int result = 0;
+        if (number1 ==0 | number2==0) return 0;
         for (int i = 1; i <= number2; i++) {
             result += number1;
         }
