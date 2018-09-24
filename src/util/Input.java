@@ -50,7 +50,11 @@ public class Input {
             System.out.println("Okay, then.  Don't know why you called me.");
             return 0;
         }
-
+    }
+    public static int getNewInt(){
+        System.out.println("Please enter an integer value");
+        int userInt = scanner.nextInt();
+        return userInt;
     }
     public static double getDouble(){
         double userDouble;
