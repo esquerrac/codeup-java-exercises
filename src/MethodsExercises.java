@@ -36,7 +36,7 @@ public class MethodsExercises {
             System.out.println("Thank you!");
             return userInt;
         }else{
-            System.out.println("Input invalid. Please try again");
+            System.out.println("InputInitial invalid. Please try again");
             getInteger(min, max);
             return 0;
         }
@@ -57,7 +57,7 @@ public class MethodsExercises {
             }
             return userInt;
         }else{
-            System.out.println("Input invalid. Please try again");
+            System.out.println("InputInitial invalid. Please try again");
             factorial(min, max);
             return 0;
         }

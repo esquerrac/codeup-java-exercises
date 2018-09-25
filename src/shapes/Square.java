@@ -8,15 +8,15 @@ public class Square extends Rectangle {
         this.side = side;
     }
 
-    public Square(double length, double width) {
-        super(length, width);
-        this.side = length;
-    }
-    public static double getArea(double side) {
-        return side*side;
+    public Square(double side) {
+        super(side, side);
+        this.side = side;
+        }
+    public double getArea() {
+        return this.side*this.side;
     }
 
-    public static double getPerimiter(double side) {
-        return side*4;
+    public double getPerimiter() {
+        return this.side*4;
     }
 }

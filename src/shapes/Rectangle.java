@@ -10,13 +10,13 @@ public class Rectangle {
 
     }
 
-    public double getArea(double length, double width) {
-        double area = length*width;
-        return area;
+    public double getArea() {
+        return this.length*this.width;
+
     }
 
-    public double getPerimiter(double length, double width) {
-        double perimiter = (length*2)+(width*2);
-        return perimiter;
+    public double getPerimiter() {
+        return (this.length*2)+(this.width*2);
+
     }
 }
