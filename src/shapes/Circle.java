@@ -1,23 +1,23 @@
-//package shapes;
-//
-//public class Circle {
-//    private static double radius;
-//
-//    public void setRadius(double radius) {
-//        Circle newCircle = new Circle();
-//        newCircle.radius = radius;
-//        System.out.println(newCircle + " radius has been set to " + radius + ".");
-//    }
-//    public static Circle (double radiusInput){
-//        radius = radiusInput;
-//    }
-//    public static double getArea(){
-//        double area = Math.PI*(radius*radius);
-//        System.out.println("The area of "+this+" is "+area+".");
-//        return area;
-//    }
-//    public static double getCircumference(){
-//        double circumference = Math.PI*2*radius;
-//        System.out.println("The area of "+this+" is "+circumference+".");
-//    }
-//}
+package shapes;
+
+public class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public double getRadius() {
+        return radius;
+    }
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+    // area is pi times the radius^2
+    public double getArea() {
+        return Math.PI * (radius*radius);
+    }
+    // circumference is 2 * pi * radius
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
+    }
+}
