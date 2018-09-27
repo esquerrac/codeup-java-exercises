@@ -1,6 +1,6 @@
 package util;
 
-import static util.InputInitial.*;
+import static util.Input.*;
 
 public class InputTest {
     public static void main(String[] args) {
