@@ -1,9 +1,10 @@
 package util;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
-    private static Scanner scanner= new Scanner(System.in).useDelimiter("\n");
+    private static Scanner scanner = new Scanner(System.in).useDelimiter("\n");
 
     public static String getString() {
         return scanner.next();
@@ -15,7 +16,12 @@ public class Input {
     }
 
     public static int getInt() {
-        return scanner.nextInt();
+        try {
+            return Integer.valueOf(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Input is not a valid integer.  Try entering \"1\" rather than \"one\", for example.");
+        }
+        return getInt();
     }
 
     public static int getInt(int min, int max) {
@@ -24,7 +30,12 @@ public class Input {
     }
 
     public static double getDouble() {
-        return scanner.nextDouble();
+        try {
+            return Double.valueOf(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Input is not a valid double.  Please try again.");
+        }
+        return getDouble();
     }
 
     public static double getDouble(double min, double max) {
